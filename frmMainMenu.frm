@@ -13,25 +13,6 @@ Begin VB.Form frmMainMenu
    ScaleHeight     =   5625
    ScaleWidth      =   12000
    StartUpPosition =   3  'Windows Default
-   Begin VB.Label lblCredits 
-      Alignment       =   2  'Center
-      BackStyle       =   0  'Transparent
-      Caption         =   "Credits"
-      BeginProperty Font 
-         Name            =   "Pristina"
-         Size            =   36
-         Charset         =   0
-         Weight          =   700
-         Underline       =   0   'False
-         Italic          =   -1  'True
-         Strikethrough   =   0   'False
-      EndProperty
-      Height          =   975
-      Left            =   4200
-      TabIndex        =   3
-      Top             =   3360
-      Width           =   3615
-   End
    Begin VB.Label lblHowToPlay 
       Alignment       =   2  'Center
       BackStyle       =   0  'Transparent
@@ -99,12 +80,6 @@ Private Sub Form_MouseMove(Button As Integer, Shift As Integer, X As Single, Y A
 lblPlay.ForeColor = &H80000012
 lblHowToPlay.ForeColor = &H80000012
 lblCredits.ForeColor = &H80000012
-End Sub
-
-
-Private Sub lblCredits_Click()
-frmMainMenu.Hide
-frmCredits.Show
 End Sub
 
 Private Sub lblCredits_MouseMove(Button As Integer, Shift As Integer, X As Single, Y As Single)
