@@ -56,7 +56,7 @@ Begin VB.Form frmCredits
    Begin VB.Label lblCredits 
       Alignment       =   2  'Center
       BackStyle       =   0  'Transparent
-      Caption         =   "Game Designed and Coded by Reezan Visram for ICS 2O1. I do not own any of the artwork, it is all royalty-free artwork"
+      Caption         =   $"frmCredits.frx":18937
       BeginProperty Font 
          Name            =   "Pristina"
          Size            =   18
@@ -92,4 +92,8 @@ Private Sub lblBackToMenu_MouseMove(Button As Integer, Shift As Integer, X As Si
 If X >= 0 And X <= 1455 And Y >= 0 And Y <= 1455 Then
     lblBackToMenu.ForeColor = &HFF&
 End If
+End Sub
+
+Private Sub lblCredits_Click()
+
 End Sub
